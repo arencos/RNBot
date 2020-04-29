@@ -27,7 +27,7 @@ async def ping(ctx):
 
 @client.command()
 async def bothelp(ctx):
-    await ctx.send(' =ping: Show the delay.\n =hello: Says hello.\n =howareyou: Says how are you.\n =_8ball: Answers a question randomly. Command: ?_8ball question\n =clear: Deletes messages. Command: =clear amount\n =j/=botjoin: Joins current server that you are on.\n =l/=botleave: Leaves the server.\n =p: Plays url thats given. Command: =p url\n =kill: Gives a random kill message. Command: =kill username\n =gayrate: I think you can guess what this is...\n =say: Says something you want. Command: =say example 5\n =bankheistsim: Simple bank heist simulator\n =rockpaperscissors: Basic rock paper scissors minigame. Command: =rockpaperscissors selection\n =report: Reports someone. Command: =report yourname who reason\n =convert: Conversion between cm-m-inch. Command: convert 5 m inch')
+    await ctx.send(' =ping: Show the delay.\n =hello: Says hello.\n =howareyou: Says how are you.\n =_8ball: Answers a question randomly. Command: ?_8ball question\n =clear: Deletes messages. Command: =clear amount\n =j/=botjoin: Joins current server that you are on.\n =l/=botleave: Leaves the server.\n =p: Plays url thats given. Command: =p url\n =kill: Gives a random kill message. Command: =kill username\n =say: Says something you want. Command: =say example 5\n =bankheistsim: Simple bank heist simulator\n =rockpaperscissors: Basic rock paper scissors minigame. Command: =rockpaperscissors selection\n =report: Reports someone. Command: =report yourname who reason\n =convert: Conversion between cm-m-inch. Command: convert 5 m inch')
 
 @client.command()
 async def hello(ctx):
