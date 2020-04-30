@@ -160,10 +160,6 @@ async def kill(ctx, *, username):
     await ctx.send(f'{username} {random.choice(killresponses)}')
 
 @client.command()
-async def gayrate(ctx, *, username):
-    await ctx.send(f'{username} is {random.randint(0,100)}% gay.')
-
-@client.command()
 async def say(ctx, what_to_say, how_many_times):
     for i in range(int(how_many_times)):
         await ctx.send(f'{what_to_say}')
@@ -192,8 +188,7 @@ async def bankheistsim(ctx):
             break
 @client.command()
 async def report(ctx, by, username, reason):
-    channel = client.get_channel(699184351115477063)
-    await channel.send(f'{username} has been reported for {reason} by {by}')
+    await ctx.send(f'{username} has been reported for {reason} by {by}')
 
 @client.command()
 async def rockpaperscissors(ctx, chosenthing):
