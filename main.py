@@ -251,4 +251,4 @@ async def about(ctx):
       data = json.load(f)
       await ctx.send(data)
 #Code end
-client.run('Token that u dont need to learn :D')
+client.run('Put ur token here')
