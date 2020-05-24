@@ -193,7 +193,7 @@ async def setreport(ctx, global channel_id):
 
 @client.command()
 async def report(ctx, by, username, reason):
-    channel = client.get_channel(channel_id)
+    channel = get_channel(channel_id)
     await channel.send(f'{username} has been reported by {by} for {reason}!')
 
 @client.command()
