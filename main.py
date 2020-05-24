@@ -188,7 +188,7 @@ async def bankheistsim(ctx):
             break
     
 @client.command()
-async def setreport(ctx, global channel_id):
+async def setreport(ctx, channel_id):
     await ctx.send(f'Log channel has been set to channel ID: {channel_id}')
 
 @client.command()
