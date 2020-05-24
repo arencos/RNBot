@@ -186,9 +186,19 @@ async def bankheistsim(ctx):
         elif rand4 == 0:
             await ctx.send("You couldnt escape.")
             break
+    
+@client.command()
+async def setreport(ctx, channel_id):
+    set_channel_id = True
+    await ctx.send(f'Log channel has been set to channel ID: {channel_id}')
+
 @client.command()
 async def report(ctx, by, username, reason):
-    await ctx.send(f'{username} has been reported for {reason} by {by}')
+    if set_channel_id == True:
+        channel = client.get_channel(channel_id)
+        await channel.send(f'{username} has been reported for {reason} by {by}')
+    else:
+        await ctx.send('You must set the channel ID to send report messages to. You can do this like this: =setreport [channel_id]!')
 
 @client.command()
 async def rockpaperscissors(ctx, chosenthing):
