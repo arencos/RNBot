@@ -188,9 +188,9 @@ async def bankheistsim(ctx):
             break
     
 @client.command()
-async def report(ctx, by, username, reason, channel_id):
-    channel = get_channel(channel_id)
-    await channel.send(f'{username} has been reported by {by} for {reason}! The report was sent to channel ID: {channel_id}')
+async def report(guild, name, *args, **kwargs):
+    channel = get(guild.channels, name=name, type=discord.ChannelType.text)
+    await bot.send_message(channel, *args, **kwargs)
 
 @client.command()
 async def rockpaperscissors(ctx, chosenthing):
